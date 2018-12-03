@@ -1,0 +1,4 @@
+language: generic
+sudo: false
+script:
+  - git ls-files --exclude='*.sh' --ignored | xargs --max-lines=1 shellcheck
